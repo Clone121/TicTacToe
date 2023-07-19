@@ -68,6 +68,22 @@ def main():
             input_ok = False
             row = ""
             column = ""
+            while not input_ok:
+                row = input("Choose row ")
+                if not row.isnumeric():
+                    print("That's not a valid number")
+                    continue
+                if int(row) > 3 or int(row) < 1:
+                    print("Out of bounds")
+                    continue
+
+                column = input("Choose column ")
+                if not column.isnumeric():
+                    print("That's not a valid number")
+                    continue
+                if int(column) > 3 or int(column) < 1:
+                    print("Out of bounds")
+                    continue
 
 main()
     
