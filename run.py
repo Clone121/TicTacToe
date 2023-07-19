@@ -85,8 +85,8 @@ def main():
                     print("Out of bounds")
                     continue
                 if row in ["1", "2", "3"] and column in ["1", "2", "3"]:
-                    row = int(row) -1
-                column = int(column) -1
+                    row = int(row) - 1
+                column = int(column) - 1
                 if board[row][column] == "-":
                     input_ok = True
                 else:
@@ -96,6 +96,14 @@ def main():
             board[row][column] = player_turn
 
             print_board()
+
+            #Check for winner or if game is tied
+            if has_winner():
+                print("Player " + player_turn + " is the winner")
+                break
+            elif game_tie():
+                print("The game was tied.")
+                break
 
 main()
     
