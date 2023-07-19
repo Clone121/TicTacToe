@@ -25,9 +25,9 @@ def main():
                 print("", board[x][y], end=" |")
         print("\n+---+---+---+")
     
-    # Check for winner
+    #Check for winner
     def has_winner():
-        # Check rows
+        #Check rows
         if board[0][0] == board[0][1] == board[0][2] != "-":
             return True
         elif board[1][0] == board[1][1] == board[1][2] != "-":
@@ -48,6 +48,26 @@ def main():
             return True
         else:
             return False
+
+    # Check if the game is tied
+    def game_tie():
+        for row in board:
+            for element in row:
+                if element == "-":
+                    return False
+        return True
+    
+    # Start Game
+    def play(player_turn):
+
+        print_board()
+
+        while True:
+            print("Player " + player_turn + ", your turn")
+
+            input_ok = False
+            row = ""
+            column = ""
 
 main()
     
