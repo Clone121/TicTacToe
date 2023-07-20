@@ -1,4 +1,3 @@
-import gspread 
 from google.oauth2.service_account import Credentials
 
 SCOPE = [
@@ -81,7 +80,7 @@ def main():
       row = ""
       column = ""
       while not input_ok:
-        row = input("Choose row ")
+        row = input("Choose row \n")
         if not row.isnumeric():
           print("That's not a valid number")
           continue
@@ -89,7 +88,7 @@ def main():
           print("Out of bounds")
           continue
 
-        column = input("Choose column")
+        column = input("Choose column\n")
         if not column.isnumeric():
           print("That's not a valid number")
           continue
