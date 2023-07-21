@@ -19,6 +19,7 @@
 > you can´t input anything else then numbers
 > message (Out of bounds) is given if your number are greater then 3 or less then 1
 > Also checks position, cant choose a position that's already taken
+> you will be asked if you want to play againor quit the game
 
 #### Future features 
 > Play againt's computer
@@ -26,8 +27,13 @@
 >
 ### Testing
 >Passed PEP8
+>Tested with letter input
+>Tested input number 0 and random number greater than 3, and got expected error messages 
+<img src = "https://github.com/Clone121/TicTacToe/blob/main/images/CI%20Python%20Linter.png?raw=true">
+
+> I also did a syntax check
 >
-<img src = 
+< 
 
 
 
