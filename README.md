@@ -1,4 +1,5 @@
 # Tic Tac Toe
+> Link to the game
 https://tic-tac-toe-project1-f5ccea8264ae.herokuapp.com/
 
 #### Tic tac toe is a classical 3*3 board game
