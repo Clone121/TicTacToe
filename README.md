@@ -33,7 +33,8 @@
 
 > I also did a syntax check
 >
-< 
+<img src = "https://github.com/Clone121/TicTacToe/assets/126593210/0746c3b1-0b0d-4cc8-9821-a8dc06e9619d">
+ 
 
 
 
